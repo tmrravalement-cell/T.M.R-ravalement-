@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="T.M.R. - Tony Merlen Ravalement : ravalement de façade, enduit projeté, ITE, peinture extérieure, réparation de fissures et nettoyage de façades dans l'Oise et alentours.">
+  <title>T.M.R. | Tony Merlen Ravalement</title>
+  <style>
+    :root{
+      --bg:#111214;
+      --card:#1b1d20;
+      --soft:#24272b;
+      --text:#f5f5f5;
+      --muted:#c8c8c8;
+      --accent:#d0d0d0;
+      --line:#3a3d42;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(17,18,20,.94);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+    .brand{font-size:24px;font-weight:800;letter-spacing:1px}
+    .brand span{font-weight:400;color:var(--muted);font-size:14px;display:block;letter-spacing:.5px}
+    .links{display:flex;gap:22px;font-size:14px}
+    .hero{
+      min-height:78vh;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(rgba(10,11,13,.58), rgba(10,11,13,.68)),
+        url('tmr-background.png') center center / cover no-repeat;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center;padding:80px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--muted);font-size:12px;font-weight:700}
+    h1{font-size:clamp(42px,7vw,82px);line-height:.95;margin:14px 0 24px}
+    h1 small{display:block;font-size:.38em;font-weight:500;color:var(--muted);margin-top:16px}
+    .lead{font-size:20px;color:#e3e3e3;max-width:720px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      display:inline-block;padding:14px 20px;border-radius:8px;
+      border:1px solid #fff;font-weight:700;transition:.2s;
+    }
+    .btn.primary{background:#fff;color:#111}
+    .btn:hover{transform:translateY(-2px);opacity:.9}
+    .hero-card{
+      border:1px solid var(--line);background:linear-gradient(145deg,rgba(35,38,42,.88),rgba(22,23,25,.88));
+      padding:30px;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.35)
+    }
+    .hero-card .tmr{
+      font-size:70px;font-weight:900;letter-spacing:-4px;
+      border-bottom:4px solid #dedede;padding-bottom:8px;margin-bottom:16px
+    }
+    .hero-card p{color:var(--muted);margin:0}
+    section{padding:80px 0}
+    h2{font-size:36px;margin:0 0 14px}
+    .section-intro{color:var(--muted);max-width:720px;margin-bottom:36px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--card)
+    }
+    .card h3{margin-top:0;font-size:20px}
+    .card p{color:var(--muted);margin-bottom:0}
+    .why{background:#17191c;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .stat{padding:24px 18px;text-align:center;border:1px solid var(--line);border-radius:12px;background:#202226}
+    .stat b{font-size:28px;display:block;margin-bottom:4px}
+    .stat span{color:var(--muted);font-size:14px}
+    .contact{
+      display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start
+    }
+    .contact-box{padding:28px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+    .contact-row{padding:12px 0;border-bottom:1px solid var(--line)}
+    .contact-row:last-child{border-bottom:0}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+    .legal{font-size:12px;color:#9ea0a4;margin-top:16px}
+    @media(max-width:820px){
+      .links{display:none}
+      .hero-grid,.contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr 1fr}
+      .hero{min-height:auto}
+      .hero-grid{padding:60px 0}
+    }
+    @media(max-width:500px){.why-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#accueil">T.M.R.<span>Tony Merlen Ravalement</span></a>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#entreprise">L'entreprise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Façades • Enduits • Isolation extérieure</div>
+        <h1>T.M.R.<small>Tony Merlen Ravalement</small></h1>
+        <p class="lead">Ravalement de façade, enduit projeté, peinture extérieure, isolation thermique par l'extérieur et rénovation de vos murs.</p>
+        <div class="actions">
+          <a class="btn primary" href="tel:+33787204813">Appeler : 07 87 20 48 13</a>
+          <a class="btn" href="mailto:tmr.ravalement@outlook.fr?subject=Demande%20de%20devis%20TMR">Demander un devis</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="tmr">TMR</div>
+        <p>Un interlocuteur unique pour vos travaux de façade, avec un travail soigné et des solutions adaptées à votre maison.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Nos services</h2>
+      <p class="section-intro">Des prestations pour protéger, rénover et embellir durablement vos façades.</p>
+      <div class="grid">
+        <div class="card"><h3>Ravalement de façade</h3><p>Préparation des supports, rénovation et remise en état de vos façades.</p></div>
+        <div class="card"><h3>Enduit projeté</h3><p>Application mécanique d'enduits de façade pour une finition régulière et professionnelle.</p></div>
+        <div class="card"><h3>ITE</h3><p>Isolation thermique par l'extérieur pour améliorer le confort et les performances du logement.</p></div>
+        <div class="card"><h3>Peinture extérieure</h3><p>Mise en peinture et rénovation des surfaces extérieures.</p></div>
+        <div class="card"><h3>Fissures & petite maçonnerie</h3><p>Réparations localisées et remise en état avant finition.</p></div>
+        <div class="card"><h3>Nettoyage de façade</h3><p>Nettoyage haute pression, entretien et préparation des supports.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="entreprise">
+    <div class="container">
+      <h2>T.M.R., votre façadier</h2>
+      <p class="section-intro">Entreprise artisanale spécialisée dans les travaux de façade, intervenant dans l'Oise et les secteurs alentours.</p>
+      <div class="why-grid">
+        <div class="stat"><b>7 ans+</b><span>d'expérience métier</span></div>
+        <div class="stat"><b>Devis</b><span>sur demande</span></div>
+        <div class="stat"><b>Décennale</b><span>activité assurée</span></div>
+        <div class="stat"><b>100 km</b><span>autour de Fréniches</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <div>
+        <h2>Parlons de votre projet</h2>
+        <p class="section-intro">Vous avez une façade à rénover, un enduit à réaliser ou un projet d'isolation extérieure ? Contactez T.M.R. pour échanger sur vos travaux.</p>
+        <div class="actions">
+          <a class="btn primary" href="tel:+33787204813">07 87 20 48 13</a>
+          <a class="btn" href="mailto:tmr.ravalement@outlook.fr">Envoyer un e-mail</a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-row"><strong>T.M.R.</strong><br>Tony Merlen Ravalement</div>
+        <div class="contact-row"><strong>Téléphone</strong><br><a href="tel:+33787204813">07 87 20 48 13</a></div>
+        <div class="contact-row"><strong>E-mail</strong><br><a href="mailto:tmr.ravalement@outlook.fr">tmr.ravalement@outlook.fr</a></div>
+        <div class="contact-row"><strong>Secteur</strong><br>Oise et alentours</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 T.M.R. – Tony Merlen Ravalement. Tous droits réservés.
+    <div class="legal">Les mentions légales complètes (SIRET, identité de l'entrepreneur, adresse professionnelle et assureur) devront être ajoutées avant publication définitive.</div>
+  </div>
+</footer>
+</body>
+</html>
