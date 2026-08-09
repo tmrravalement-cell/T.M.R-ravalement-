@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T.M.R. – Tony Merlen Ravalement</title>
+<meta name="description" content="T.M.R. Tony Merlen Ravalement : ravalement, enduit projeté, ITE, peinture extérieure, fissures et nettoyage de façade. Devis gratuit.">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#fff;background:#08111d}
+a{text-decoration:none;color:inherit}.wrap{width:min(1420px,94%);margin:auto}
+
+.hero{background:#08111d;color:#fff;min-height:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+.brand{font-weight:900;font-size:42px;line-height:.9}
+.brand span{display:block;font-size:18px;font-weight:700;letter-spacing:1px;margin-top:9px}
+.brand small{display:block;color:#d7a65a;letter-spacing:6px;font-size:14px;margin-top:6px}
+.menu{display:flex;gap:34px;align-items:center;font-weight:700}
+.menu a:first-child{color:#d7a65a;border-bottom:2px solid #d7a65a;padding-bottom:8px}
+
+.hero-main{flex:1;display:flex;align-items:center;padding:40px 0 30px}
+.copy{max-width:660px}
+.photo-panel{position:relative}
+.photo-frame{background:#0d1828;border:1px solid rgba(255,255,255,.16);padding:12px;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.30)}
+.photo-frame img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.photo-caption{margin-top:12px;color:#d6dbe3;font-size:13px;text-align:center}
+
+.copy h1{font-size:clamp(48px,6vw,82px);line-height:.98;margin:0 0 14px;text-transform:uppercase;font-weight:900}
+.copy h1 .gold{color:#d7a65a}
+.tag{font-size:24px;font-weight:900;letter-spacing:1px;margin-bottom:26px}
+.tagline{font-family:Georgia,serif;font-style:italic;color:#d9b77b;font-size:27px;line-height:1.4;max-width:560px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:15px 20px;border-radius:5px;font-weight:900;border:1px solid rgba(255,255,255,.65);background:#111b2a}
+.btn.gold{background:#d2a15a;border-color:#d2a15a}
+.phone{font-size:25px;font-weight:900;margin-top:18px}
+
+.benefits{margin:0 auto 28px;background:rgba(7,16,30,.94);border:1px solid rgba(255,255,255,.17);border-radius:12px;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.benefit{padding:20px 24px;border-right:1px solid rgba(255,255,255,.15)}
+.benefit:last-child{border-right:0}.benefit b{display:block;color:#d8ad63;margin-bottom:5px;font-size:17px}
+
+.services{background:#f6f2eb;color:#121927;padding:32px 0 44px}
+.services h2{text-align:center;text-transform:uppercase;letter-spacing:7px;font-size:36px;margin:0 0 26px}
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{background:#fff;border-radius:9px;border:1px solid #d7d2c9;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card .txt{padding:15px}.card h3{font-size:14px;text-transform:uppercase;margin:0 0 8px}.card p{font-size:13px;color:#3c3c3c;line-height:1.45;margin:0}
+
+.about{background:#fff;color:#171717;padding:60px 0;text-align:center}
+.about h2,.contact h2{font-size:36px;margin:0 0 15px}
+.about p{max-width:820px;margin:auto;line-height:1.7;color:#555}
+
+.contact{background:#091322;padding:58px 0;text-align:center}
+.contact p{color:#d2d2d2;font-size:18px}
+footer{background:#050b14;color:#aaa;text-align:center;padding:24px;font-size:13px}
+footer a{text-decoration:underline}
+
+
+.gallery{background:#0b1524;color:#fff;padding:60px 0}
+.gallery h2{text-align:center;text-transform:uppercase;letter-spacing:6px;font-size:34px;margin:0 0 10px}
+.gallery .intro{text-align:center;color:#cfd3da;margin:0 auto 30px;max-width:760px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{border:1px solid rgba(255,255,255,.16);border-radius:10px;overflow:hidden;background:#111c2c}
+.beforeafter{display:grid;grid-template-columns:1fr 1fr;min-height:220px}
+.placeholder{display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#172437,#0c1523);color:#d8ad63;font-weight:900;letter-spacing:2px;position:relative}
+.placeholder+ .placeholder{border-left:1px solid rgba(255,255,255,.15)}
+.placeholder span{display:block;color:#aeb7c4;font-size:12px;letter-spacing:0;margin-top:8px;font-weight:400}
+.project-title{padding:14px 16px;text-align:center;font-weight:800}
+
+@media(max-width:1000px){
+  .menu a:not(.phone-link){display:none}
+  .hero-main{grid-template-columns:1fr;gap:28px;padding:38px 0 30px}
+  .copy{max-width:100%}
+  .photo-panel{max-width:760px;width:100%;margin:0 auto}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .benefits{grid-template-columns:1fr 1fr}
+  .benefit{border-bottom:1px solid rgba(255,255,255,.15)}
+}
+@media(max-width:650px){
+  nav{padding:17px 0}.brand{font-size:30px}.brand span{font-size:13px}.brand small{font-size:10px}
+  .hero-main{display:flex;flex-direction:column-reverse;padding:24px 0 22px}
+  .photo-panel{width:100%}.photo-frame{padding:8px;border-radius:12px}.photo-frame img{aspect-ratio:4/3;object-fit:cover}
+  .copy{padding:4px 0;text-align:left}
+  .copy h1{font-size:42px}.tag{font-size:16px}.tagline{font-size:20px}
+  .actions{gap:8px}.btn{font-size:13px;padding:12px 13px}.phone{font-size:21px}
+  .benefits{grid-template-columns:1fr 1fr}.benefit{padding:13px;font-size:12px}
+  .cards{grid-template-columns:1fr 1fr}.card img{height:115px}
+  .services h2{font-size:27px;letter-spacing:4px}
+  .projects{grid-template-columns:1fr}.beforeafter{min-height:180px}
+}
+</style>
+</head>
+<body>
+<header class="hero" id="accueil">
+  <div class="wrap">
+    <nav>
+      <div class="brand">TMR<span>TONY MERLEN</span><small>RAVALEMENT</small></div>
+      <div class="menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-main">
+      <div class="copy">
+        <h1>Votre façadier<br><span class="gold">de confiance</span></h1>
+        <div class="tag">RAVALEMENT • ENDUIT • ITE • PEINTURE</div>
+        <div class="tagline">Travail soigné, matériaux de qualité,<br>pour des façades qui durent.</div>
+        <div class="actions">
+          <a class="btn gold" href="mailto:tmr.ravalement@outlook.fr?subject=Demande%20de%20devis%20TMR">✉ DEMANDEZ VOTRE DEVIS GRATUIT</a>
+          <a class="btn" href="tel:+33787204813">☎ NOUS APPELER</a>
+        </div>
+        <div class="phone">07 87 20 48 13</div>
+      </div>
+      <div class="photo-panel">
+        <div class="photo-frame">
+          <img src="maison-cadre.jpg" alt="T.M.R. – Tony Merlen Ravalement">
+        </div>
+        <div class="photo-caption">T.M.R. – Tony Merlen Ravalement</div>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="benefit"><b>Assurance</b>Décennale & RC Pro<br>SMA / PRO BTP</div>
+      <div class="benefit"><b>Travail soigné</b>Matériaux de qualité<br>Finitions durables</div>
+      <div class="benefit"><b>Devis gratuit</b>Réponse rapide<br>et sans engagement</div>
+      <div class="benefit"><b>Déplacement</b>Jusqu’à 100 km<br>autour de Fréniches (60)</div>
+    </div>
+  </div>
+</header>
+
+<section class="services" id="prestations">
+  <div class="wrap">
+    <h2>Nos prestations</h2>
+    <div class="cards">
+      <div class="card"><img src="enduit.jpg" alt=""><div class="txt"><h3>Enduit projeté</h3><p>Application d’enduit à la machine.</p></div></div>
+      <div class="card"><img src="ravalement.jpg" alt=""><div class="txt"><h3>Ravalement de façade</h3><p>Nettoyage, réparation et embellissement.</p></div></div>
+      <div class="card"><img src="ite.jpg" alt=""><div class="txt"><h3>Isolation thermique par l’extérieur (ITE)</h3><p>Améliorez votre confort et vos économies d’énergie.</p></div></div>
+      <div class="card"><img src="peinture.jpg" alt=""><div class="txt"><h3>Peinture extérieure</h3><p>Peinture de façade et finitions décoratives.</p></div></div>
+      <div class="card"><img src="fissures.jpg" alt=""><div class="txt"><h3>Réparation de fissures</h3><p>Traitement et préparation des fissures.</p></div></div>
+      <div class="card"><img src="nettoyage.jpg" alt=""><div class="txt"><h3>Nettoyage de façade</h3><p>Nettoyage haute pression et préparation.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="gallery" id="realisations">
+  <div class="wrap">
+    <h2>Nos réalisations</h2>
+    <p class="intro">Retrouvez prochainement ici les photos avant / après des chantiers réalisés par T.M.R.</p>
+    <div class="projects">
+      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Ravalement de façade</div></div>
+      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Enduit & finition</div></div>
+      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Rénovation extérieure</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="apropos"><div class="wrap">
+  <h2>T.M.R. – Tony Merlen Ravalement</h2>
+  <p>Artisan façadier, je vous accompagne personnellement dans vos travaux de ravalement, d’enduit et de finition de façade, de l’étude du projet jusqu’à la réalisation.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Demandez votre devis gratuit</h2>
+  <p>Contactez T.M.R. par téléphone ou par e-mail pour présenter votre projet.</p>
+  <a class="btn gold" href="tel:+33787204813">☎ 07 87 20 48 13</a>
+  <a class="btn" href="mailto:tmr.ravalement@outlook.fr">✉ tmr.ravalement@outlook.fr</a>
+</div></section>
+
+<footer>© 2026 T.M.R. – Tony Merlen Ravalement · <a href="mentions-legales.html">Mentions légales & confidentialité</a></footer>
+</body>
+</html>
