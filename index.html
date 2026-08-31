@@ -87,7 +87,42 @@ footer a{text-decoration:underline}
   .services h2{font-size:27px;letter-spacing:4px}
   .projects{grid-template-columns:1fr}.beforeafter{min-height:180px}
 }
-</style>
+/* PHOTOS AVANT / APRÈS */
+.beforeafter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.beforeafter img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.project {
+  overflow: hidden;
+}
+
+.project-title {
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* AFFICHAGE TÉLÉPHONE */
+@media (max-width: 650px) {
+  .beforeafter {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .beforeafter img {
+    width: 100%;
+    height: auto;
+  }
+  }</style>
 </head>
 <body>
 <header class="hero" id="accueil">
@@ -147,11 +182,23 @@ footer a{text-decoration:underline}
 <section class="gallery" id="realisations">
   <div class="wrap">
     <h2>Nos réalisations</h2>
-    <p class="intro">Retrouvez prochainement ici les photos avant / après des chantiers réalisés par T.M.R.</p>
+<p class="intro">Découvrez quelques-unes de nos réalisations avant / après.</p>
     <div class="projects">
-      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Ravalement de façade</div></div>
-      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Enduit & finition</div></div>
-      <div class="project"><div class="beforeafter"><div class="placeholder">AVANT<span>Photo du chantier à venir</span></div><div class="placeholder">APRÈS<span>Photo du chantier terminé</span></div></div><div class="project-title">Rénovation extérieure</div></div>
+  <div class="project">
+  <div class="beforeafter">
+    <img src="IMG_20260831_153440.jpg" alt="Avant ravalement">
+    <img src="IMG_20260831_153354.jpg" alt="Après ravalement">
+  </div>
+  <div class="project-title">Ravalement d'un mur extérieur — Avant / Après</div>
+</div>
+
+<div class="project">
+  <div class="beforeafter">
+    <img src="IMG_20260831_154607.jpg" alt="Avant ravalement">
+    <img src="IMG_20260831_154626.jpg" alt="Après ravalement">
+  </div>
+  <div class="project-title">Ravalement d'un mur extérieur — Avant / Après</div>
+</div>
     </div>
   </div>
 </section>
